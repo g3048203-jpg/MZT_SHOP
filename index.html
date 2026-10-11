@@ -297,7 +297,7 @@
       </div>
 
       <!-- СПИСОК ВКУСОВ -->
-      <div id="modal-items" class="space-y-2.5 mb-6 max-h-60 overflow-y-auto pr-2 font-mono text-xs text-gray-300">
+      <div id="modal-items" class="space-y-3 mb-6 max-h-72 overflow-y-auto pr-2 font-mono text-xs text-gray-300">
         <div class="text-gray-400 text-center py-4">Загрузка позиций...</div>
       </div>
 
@@ -417,7 +417,7 @@
         </div>
       </div>
 
-      <!-- ВЫВОД ТВОЕЙ АВАТАРКИ НА САЙТ -->
+      <!-- ВЫВОД АВАТАРКИ -->
       <div class="lg:col-span-5 flex justify-center">
         <div class="w-full max-w-[360px] sm:max-w-[420px] aspect-square cyber-card hero-glow-frame p-3 shadow-2xl flex flex-col items-center justify-center relative overflow-hidden group">
           <img src="avatar.jpg" alt="MZT SHOP Avatar" class="w-full h-full object-cover rounded-2xl border border-white/10 group-hover:scale-105 transition duration-500">
@@ -433,12 +433,12 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
         
-        <!-- 1. Злая Монашка -->
-        <div onclick="playClick(); openCategoryModal('Злая Монашка', '🖤', 'Крепость: 69mg')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between cursor-pointer group">
+        <!-- 1. Злая Монашка Sour -->
+        <div onclick="playClick(); openCategoryModal('Злая Монашка Sour 69MG', '⚡', 'Крепость: 69mg')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between cursor-pointer group">
           <div>
-            <div class="w-10 h-10 rounded-2xl bg-red-500/10 border border-red-500/30 text-red-400 flex items-center justify-center text-lg mb-4">🖤</div>
-            <h3 class="font-display text-xl sm:text-2xl font-bold soft-accent-text mb-2">Злая Монашка ↗</h3>
-            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed italic">Ice & Sour линейки (69мг). Виноград, киви, лесные ягоды, шипучки и лед.</p>
+            <div class="w-10 h-10 rounded-2xl bg-white/5 border border-white/10 text-lime-400 flex items-center justify-center text-lg mb-4">⚡</div>
+            <h3 class="font-display text-xl sm:text-2xl font-bold soft-accent-text mb-2">Злая Монашка Sour ↗</h3>
+            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed italic">Кислые миксы (69мг). Виноград с малиной, червячки, киви-малина и шипучки.</p>
           </div>
           <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between font-mono text-xs">
             <span class="text-gray-400">Крепость: 69mg</span>
@@ -446,10 +446,23 @@
           </div>
         </div>
 
-        <!-- 2. Annima Love -->
-        <div onclick="playClick(); openCategoryModal('Annima Love', '💜', 'Крепость: 50mg')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between cursor-pointer group">
+        <!-- 2. Злая Монашка Ice -->
+        <div onclick="playClick(); openCategoryModal('Злая Монашка Ice 69MG', '❄️', 'Крепость: 69mg')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between cursor-pointer group">
           <div>
-            <div class="w-10 h-10 rounded-2xl bg-purple-500/10 border border-purple-500/30 text-purple-400 flex items-center justify-center text-lg mb-4">💜</div>
+            <div class="w-10 h-10 rounded-2xl bg-white/5 border border-white/10 text-cyan-400 flex items-center justify-center text-lg mb-4">❄️</div>
+            <h3 class="font-display text-xl sm:text-2xl font-bold soft-accent-text mb-2">Злая Монашка Ice ↗</h3>
+            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed italic">Ледяные миксы (69мг). Виноград, вишня-ананас, дыня, киви, манго и лесные ягоды.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between font-mono text-xs">
+            <span class="text-gray-400">Крепость: 69mg</span>
+            <span class="soft-accent-text font-bold">В наличии</span>
+          </div>
+        </div>
+
+        <!-- 3. Annima Love -->
+        <div onclick="playClick(); openCategoryModal('Annima Love 50MG', '💜', 'Крепость: 50mg')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between cursor-pointer group">
+          <div>
+            <div class="w-10 h-10 rounded-2xl bg-white/5 border border-white/10 text-purple-400 flex items-center justify-center text-lg mb-4">💜</div>
             <h3 class="font-display text-xl sm:text-2xl font-bold soft-accent-text mb-2">Annima Love ↗</h3>
             <p class="text-gray-400 text-xs sm:text-sm leading-relaxed italic">Премиум миксы (50мг). Смородина–вишня, лимонады и ледяной виноград.</p>
           </div>
@@ -459,23 +472,10 @@
           </div>
         </div>
 
-        <!-- 3. Шайбы D.L.T.A -->
-        <div onclick="playClick(); openCategoryModal('D.L.T.A', '⚡', 'Крепость: 150mg')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between cursor-pointer group">
-          <div>
-            <div class="w-10 h-10 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-lg mb-4">⚡</div>
-            <h3 class="font-display text-xl sm:text-2xl font-bold soft-accent-text mb-2">Шайбы D.L.T.A ↗</h3>
-            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed italic">Энергетики Red Bull & Adrenaline (150мг). Тропики, арбуз, персик.</p>
-          </div>
-          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between font-mono text-xs">
-            <span class="text-gray-400">Крепость: 150mg</span>
-            <span class="soft-accent-text font-bold">В наличии</span>
-          </div>
-        </div>
-
         <!-- 4. Skala -->
-        <div onclick="playClick(); openCategoryModal('Skala', '🧊', 'Крепость: 20mg')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between md:col-span-1.5 cursor-pointer group">
+        <div onclick="playClick(); openCategoryModal('Skala 20MG', '🧊', 'Крепость: 20mg')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between cursor-pointer group">
           <div>
-            <div class="w-10 h-10 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-lg mb-4">🧊</div>
+            <div class="w-10 h-10 rounded-2xl bg-white/5 border border-white/10 text-cyan-400 flex items-center justify-center text-lg mb-4">🧊</div>
             <h3 class="font-display text-xl sm:text-2xl font-bold soft-accent-text mb-2">Skala ↗</h3>
             <p class="text-gray-400 text-xs sm:text-sm leading-relaxed italic">Популярная линейка (20мг). Сочное яблоко, киви, малина и спелое манго.</p>
           </div>
@@ -485,11 +485,37 @@
           </div>
         </div>
 
-        <!-- 5. Stalker -->
-        <div onclick="playClick(); openCategoryModal('STALKER', '🍃', 'Линейка Stalker')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between md:col-span-1.5 cursor-pointer group">
+        <!-- 5. Шайбы D.L.T.A Red Bull -->
+        <div onclick="playClick(); openCategoryModal('Шайбы D.L.T.A Red Bull 150MG', '⚡', 'Энергетики')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between cursor-pointer group">
           <div>
-            <div class="w-10 h-10 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-lg mb-4">🍃</div>
-            <h3 class="font-display text-xl sm:text-2xl font-bold soft-accent-text mb-2">Stalker ↗</h3>
+            <div class="w-10 h-10 rounded-2xl bg-white/5 border border-white/10 text-amber-400 flex items-center justify-center text-lg mb-4">⚡</div>
+            <h3 class="font-display text-xl sm:text-2xl font-bold soft-accent-text mb-2">Шайбы D.L.T.A Red Bull ↗</h3>
+            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed italic">Энергетики Red Bull (150мг). Арбуз, персик, тропические фрукты.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between font-mono text-xs">
+            <span class="text-gray-400">Крепость: 150mg</span>
+            <span class="soft-accent-text font-bold">В наличии</span>
+          </div>
+        </div>
+
+        <!-- 6. Шайбы D.L.T.A Energy -->
+        <div onclick="playClick(); openCategoryModal('Шайбы D.L.T.A Energy 150MG', '🔥', 'Энергетики')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between cursor-pointer group">
+          <div>
+            <div class="w-10 h-10 rounded-2xl bg-white/5 border border-white/10 text-amber-500 flex items-center justify-center text-lg mb-4">🔥</div>
+            <h3 class="font-display text-xl sm:text-2xl font-bold soft-accent-text mb-2">Шайбы D.L.T.A Energy ↗</h3>
+            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed italic">Энергетики с эффектом (150мг). Adrenaline Hot effect.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between font-mono text-xs">
+            <span class="text-gray-400">Крепость: 150mg</span>
+            <span class="soft-accent-text font-bold">В наличии</span>
+          </div>
+        </div>
+
+        <!-- 7. Stalker -->
+        <div onclick="playClick(); openCategoryModal('STALKER ST', '🍃', 'Особая серия')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between cursor-pointer group">
+          <div>
+            <div class="w-10 h-10 rounded-2xl bg-white/5 border border-white/10 text-emerald-400 flex items-center justify-center text-lg mb-4">🍃</div>
+            <h3 class="font-display text-xl sm:text-2xl font-bold soft-accent-text mb-2">STALKER ST ↗</h3>
             <p class="text-gray-400 text-xs sm:text-sm leading-relaxed italic">Фирменная мята и освежающие миксы.</p>
           </div>
           <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between font-mono text-xs">
@@ -498,12 +524,12 @@
           </div>
         </div>
 
-        <!-- 6. Картриджи -->
-        <div onclick="playClick(); openCategoryModal('Картриджи', '🛠️', 'Расходники')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between md:col-span-3 cursor-pointer group">
+        <!-- 8. Картриджи -->
+        <div onclick="playClick(); openCategoryModal('XRO 8', '🛠️', 'Расходники')" class="cyber-card p-6 sm:p-8 flex flex-col justify-between md:col-span-2 cursor-pointer group">
           <div>
-            <div class="w-10 h-10 rounded-2xl bg-blue-500/10 border border-blue-500/30 text-blue-400 flex items-center justify-center text-lg mb-4">🛠️</div>
+            <div class="w-10 h-10 rounded-2xl bg-white/5 border border-white/10 text-blue-400 flex items-center justify-center text-lg mb-4">🛠️</div>
             <h3 class="font-display text-xl sm:text-2xl font-bold soft-accent-text mb-2">Картриджи Xros ↗</h3>
-            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed italic">Оригинальные картриджи под 0.6 / 0.8 ом.</p>
+            <p class="text-gray-400 text-xs sm:text-sm leading-relaxed italic">Оригинальные картриджи под 0.6 / 0.8 ом (300 ₽).</p>
           </div>
           <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between font-mono text-xs">
             <span class="text-gray-400">Расходники</span>
@@ -586,36 +612,43 @@
 
   <script>
     const sheetData = [
-      { category: "Annima Love", name: "ANNIMA Love 50 mg- Смородина Вишня Черника", qty: "1", price: "450" },
-      { category: "Annima Love", name: "ANNIMA Love 50 mg-Клубника киви", qty: "1", price: "450" },
-      { category: "Annima Love", name: "ANNIMA Love 50 mg-Ледяной виноград", qty: "1", price: "450" },
-      { category: "Annima Love", name: "ANNIMA Love 50 mg-Энергетик Малина", qty: "1", price: "450" },
-      { category: "Annima Love", name: "Annima Love 50мг - Малиновый лимонад", qty: "1", price: "450" },
-      { category: "Annima Love", name: "Annima Love 50мг - Морозные лесные ягоды", qty: "1", price: "450" },
-      { category: "D.L.T.A", name: "D.L.T.A Red Bull 150мг Арбуз", qty: "1", price: "400" },
-      { category: "D.L.T.A", name: "D.L.T.A Red Bull 150мг Персик", qty: "1", price: "400" },
-      { category: "D.L.T.A", name: "D.L.T.A Red Bull 150мг Тропические фрукты", qty: "1", price: "400" },
-      { category: "D.L.T.A", name: "D.L.T.A Energy 150мг Adrenaline Hot effect", qty: "1", price: "400" },
-      { category: "STALKER", name: "ST ROYAL MINT (Королевская мята)", qty: "2", price: "450" },
-      { category: "Skala", name: "Skala 20мг - Киви", qty: "3", price: "350" },
-      { category: "Skala", name: "Skala 20мг - Малина", qty: "1", price: "350" },
-      { category: "Skala", name: "Skala 20мг - Манго", qty: "1", price: "350" },
-      { category: "Skala", name: "Skala 20мг - Яблоко", qty: "3", price: "350" },
-      { category: "Злая Монашка", name: "Злая Монашка Ice (69мг) Виноградные леденцы", qty: "1", price: "450" },
-      { category: "Злая Монашка", name: "Злая Монашка Ice (69мг) Вишня ананас лед", qty: "1", price: "450" },
-      { category: "Злая Монашка", name: "Злая Монашка Ice (69мг) Дыня Лед", qty: "1", price: "450" },
-      { category: "Злая Монашка", name: "Злая Монашка Ice (69мг) Киви лед", qty: "2", price: "450" },
-      { category: "Злая Монашка", name: "Злая Монашка Ice (69мг) Малина арбуз лед", qty: "1", price: "450" },
-      { category: "Злая Монашка", name: "Злая Монашка Ice (69мг) Малина лед", qty: "1", price: "450" },
-      { category: "Злая Монашка", name: "Злая Монашка Ice (69мг) Манго лед", qty: "1", price: "450" },
-      { category: "Злая Монашка", name: "Злая Монашка Sour (69мг) - Виноград с малиной", qty: "1", price: "450" },
-      { category: "Злая Монашка", name: "Злая Монашка Sour (69мг) - Вишневые червячки", qty: "1", price: "450" },
-      { category: "Злая Монашка", name: "Злая Монашка Sour (69мг) - Киви и малина", qty: "1", price: "450" },
-      { category: "Злая Монашка", name: "Злая Монашка Sour (69мг) - Лесные ягоды", qty: "2", price: "450" },
-      { category: "Злая Монашка", name: "Злая Монашка Sour (69мг) - Яблочная шипучка", qty: "1", price: "450" },
-      { category: "Картриджи", name: "Картриджи Xros 0,6om", qty: "4", price: "300" },
-      { category: "Картриджи", name: "Картриджи Xros 0,6om 3ml", qty: "4", price: "300" },
-      { category: "Картриджи", name: "Картриджи Xros 0,8om", qty: "4", price: "300" }
+      { category: "Злая Монашка Sour 69MG", name: "Виноград с малиной", qty: "1", price: "450" },
+      { category: "Злая Монашка Sour 69MG", name: "Вишневые червячки", qty: "1", price: "450" },
+      { category: "Злая Монашка Sour 69MG", name: "Киви и малина", qty: "1", price: "450" },
+      { category: "Злая Монашка Sour 69MG", name: "Лесные ягоды", qty: "2", price: "450" },
+      { category: "Злая Монашка Sour 69MG", name: "Яблочная шипучка", qty: "1", price: "450" },
+      
+      { category: "Злая Монашка Ice 69MG", name: "Виноградные леденцы", qty: "1", price: "450" },
+      { category: "Злая Монашка Ice 69MG", name: "Вишня ананас лед", qty: "1", price: "450" },
+      { category: "Злая Монашка Ice 69MG", name: "Дыня Лед", qty: "1", price: "450" },
+      { category: "Злая Монашка Ice 69MG", name: "Киви лед", qty: "2", price: "450" },
+      { category: "Злая Монашка Ice 69MG", name: "Малина арбуз лед", qty: "1", price: "450" },
+      { category: "Злая Монашка Ice 69MG", name: "Малина лед", qty: "1", price: "450" },
+      { category: "Злая Монашка Ice 69MG", name: "Манго лед", qty: "1", price: "450" },
+
+      { category: "Annima Love 50MG", name: "Смородина Вишня Черника", qty: "1", price: "450" },
+      { category: "Annima Love 50MG", name: "Клубника киви", qty: "1", price: "450" },
+      { category: "Annima Love 50MG", name: "Ледяной виноград", qty: "1", price: "450" },
+      { category: "Annima Love 50MG", name: "Энергетик Малина", qty: "1", price: "450" },
+      { category: "Annima Love 50MG", name: "Малиновый лимонад", qty: "1", price: "450" },
+      { category: "Annima Love 50MG", name: "Морозные лесные ягоды", qty: "1", price: "450" },
+
+      { category: "Skala 20MG", name: "Киви", qty: "3", price: "350" },
+      { category: "Skala 20MG", name: "Малина", qty: "1", price: "350" },
+      { category: "Skala 20MG", name: "Манго", qty: "1", price: "350" },
+      { category: "Skala 20MG", name: "Яблоко", qty: "3", price: "350" },
+
+      { category: "Шайбы D.L.T.A Red Bull 150MG", name: "Арбуз", qty: "1", price: "450" },
+      { category: "Шайбы D.L.T.A Red Bull 150MG", name: "Персик", qty: "1", price: "450" },
+      { category: "Шайбы D.L.T.A Red Bull 150MG", name: "Тропические фрукты", qty: "1", price: "450" },
+
+      { category: "Шайбы D.L.T.A Energy 150MG", name: "Adrenaline Hot effect", qty: "1", price: "450" },
+
+      { category: "STALKER ST", name: "ROYAL MINT (Королевская мята)", qty: "2", price: "450" },
+
+      { category: "XRO 8", name: "Xros 0,6om", qty: "4", price: "300" },
+      { category: "XRO 8", name: "Xros 0,6om 3ml", qty: "4", price: "300" },
+      { category: "XRO 8", name: "Xros 0,8om", qty: "4", price: "300" }
     ];
 
     function openCategoryModal(categoryName, icon, tag) {
@@ -628,8 +661,7 @@
 
       setTimeout(() => {
         const filtered = sheetData.filter(item => 
-          item.category.toLowerCase().includes(categoryName.toLowerCase()) ||
-          categoryName.toLowerCase().includes(item.category.toLowerCase())
+          item.category.toLowerCase().trim() === categoryName.toLowerCase().trim()
         );
         
         itemsContainer.innerHTML = '';
@@ -640,15 +672,17 @@
 
         filtered.forEach(item => {
           const div = document.createElement('div');
-          div.className = 'flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/5 text-gray-200';
+          div.className = 'flex items-center justify-between p-3.5 rounded-xl bg-white/5 border border-white/10 text-gray-200 hover:border-emerald-500/50 transition';
           div.innerHTML = `
-            <div>
-              <span class="font-bold text-white block">${item.name}</span>
-              <span class="text-[10px] text-gray-400">В наличии: <strong class="text-emerald-400">${item.qty} шт.</strong></span>
+            <div class="pr-2">
+              <span class="font-bold text-white block text-sm sm:text-base mb-0.5">${item.name}</span>
+              <span class="text-xs text-gray-400 font-mono">В наличии: <strong class="text-emerald-400">${item.qty} шт.</strong></span>
             </div>
-            <div class="text-right">
-              <span class="font-bold soft-accent-text text-sm">${item.price} ₽</span>
-              <a href="https://t.me/mzt_shop?text=Хочу%20заказать:%20${encodeURIComponent(item.name)}" target="_blank" class="block text-[10px] text-cyan-400 underline mt-0.5">Заказать</a>
+            <div class="text-right shrink-0">
+              <span class="font-bold soft-accent-text text-base block mb-1">${item.price} ₽</span>
+              <a href="https://t.me/mzt_shop?text=Хочу%20заказать:%20${encodeURIComponent(categoryName + ' — ' + item.name)}" target="_blank" onclick="playClick()" class="inline-block px-3 py-1 rounded-lg bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-[11px] font-bold hover:bg-emerald-500 hover:text-black transition">
+                Заказать ↗
+              </a>
             </div>
           `;
           itemsContainer.appendChild(div);
